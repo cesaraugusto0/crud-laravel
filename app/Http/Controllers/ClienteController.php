@@ -9,6 +9,10 @@ use App\Models\Cliente;
 class ClienteController extends Controller
 {
     
+    public function login() {
+        return view('login');
+    }
+
     public function index() {
 
         return view('index');

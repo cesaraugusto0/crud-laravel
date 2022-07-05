@@ -54,7 +54,7 @@
                         </a>
                     </div>
                     <div class="perfil">
-                        <a href="#">
+                        <a href="/">
                             <ion-icon name="person-outline"></ion-icon>
                         </a>
                     </div>
@@ -65,7 +65,7 @@
 
             <!--sidebar começo-->
             <div class="sidebar">
-                <a href="/" id="nuvem">
+                <a href="/index" id="nuvem">
                     <ion-icon name="cloud"></ion-icon>
                 </a>
                 <a href="/clientes" class="item-menu">

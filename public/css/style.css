@@ -90,7 +90,7 @@ div.perfil a {
     height: 100%;
     margin-top: -50px;
     left: 0;
-    background: #0AA696;
+    background: rgb(61, 157, 179);
     transition: 0.5s;
     transition-property: left;
 }
@@ -109,7 +109,7 @@ div.perfil a {
 }
 
 .sidebar .item-menu:hover {
-    background: #007a6e;
+    background: rgb(31, 98, 113);
     color: #fff;
 }
 
@@ -284,7 +284,7 @@ table.table td a {
 }
 
 table.table td a {
-    color: #0AA696;
+    color: rgb(61, 157, 179);
 }
 
 table.table td a {

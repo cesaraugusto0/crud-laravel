@@ -15,8 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ClienteController;
 
+/* Direciona p/ action login, que retorna a tela de login */
+Route::get('/', [ClienteController::class, 'login']);
+
 /* Direciona p/ action index, que retorna a pagina inicial */
-Route::get('/', [ClienteController::class, 'index']);
+Route::get('/index', [ClienteController::class, 'index']);
 
 
 /*  Direciona p/ action cadastroCliente, que retorna a pagina de cadastro  */
