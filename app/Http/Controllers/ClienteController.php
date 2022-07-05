@@ -27,5 +27,19 @@ class ClienteController extends Controller
         return view('clientes.cadastro-cliente');
     }
 
+    public function store(Request $request) {
+
+        $cliente = new Cliente;
+
+        $cliente->nome = $request->inputName;
+        $cliente->telefone = $request->inputFone;
+        $cliente->email = $request->inputEmail;
+
+        $cliente->save();
+
+        return redirect('/clientes')->with('msg', 'Cliente cadastrado com sucesso!');
+
+    }
+
 
 }

@@ -17,5 +17,6 @@ use App\Http\Controllers\ClienteController;
 
 Route::get('/', [ClienteController::class, 'index']);
 Route::get('/clientes', [ClienteController::class, 'clientes']);
+Route::post('/clientes', [ClienteController::class, 'store']);
 Route::get('/clientes/cadastro', [ClienteController::class, 'cadastroCliente']);
 
