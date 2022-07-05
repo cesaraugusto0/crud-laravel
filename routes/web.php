@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\ClienteController;
+
+Route::get('/clientes', [ClienteController::class, 'index']);
+Route::get('/', [ClienteController::class, 'home']);

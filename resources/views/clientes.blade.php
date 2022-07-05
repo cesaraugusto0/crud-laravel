@@ -31,7 +31,7 @@
 
             <div class="pesquisa col-md-4">
                 <span>
-                    <a href="#" id="cloud"><ion-icon name="cloud"></ion-icon></a>
+                    <a href="/" id="cloud"><ion-icon name="cloud"></ion-icon></a>
                 </span>
 
                 <input type="search" name="" id="search" placeholder="Digite o que procura">
@@ -61,7 +61,7 @@
 
         <!--sidebar começo-->
         <div class="sidebar">
-            <a href="#" id="nuvem">
+            <a href="/" id="nuvem">
                 <ion-icon name="cloud"></ion-icon>
             </a>
             <a href="#" class="item-menu">
@@ -164,7 +164,9 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @foreach ($clientes as $cliente)
                                 <tr>
+                                    
                                     <td>
                                         <a href="#" class="view" title="View" data-toggle="tooltip">
                                             <ion-icon name="eye-outline"></ion-icon>
@@ -176,74 +178,11 @@
                                             <ion-icon name="trash-outline"></ion-icon>
                                         </a>
                                     </td>
-                                    <td>Thomas Hardy</td>
-                                    <td>(61) 98356-5278</td>
-                                    <td>thomas33@gmai.com</td>
+                                    <td>{{ $cliente->nome }}</td>
+                                    <td>{{ $cliente->telefone }}</td>
+                                    <td>{{ $cliente->email }}</td>
                                 </tr>
-                                <tr>
-                                    <td>
-                                        <a href="#" class="view" title="View" data-toggle="tooltip">
-                                            <ion-icon name="eye-outline"></ion-icon>
-                                        </a>
-                                        <a href="#" class="edit" title="Edit" data-toggle="tooltip">
-                                            <ion-icon name="create-outline"></ion-icon>
-                                        </a>
-                                        <a href="#" class="delete" title="Delete" data-toggle="tooltip">
-                                            <ion-icon name="trash-outline"></ion-icon>
-                                        </a>
-                                    </td>
-                                    <td>Maria Anders</td>
-                                    <td>(55) 98675-4534</td>
-                                    <td>maiaand4@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="#" class="view" title="View" data-toggle="tooltip">
-                                            <ion-icon name="eye-outline"></ion-icon>
-                                        </a>
-                                        <a href="#" class="edit" title="Edit" data-toggle="tooltip">
-                                            <ion-icon name="create-outline"></ion-icon>
-                                        </a>
-                                        <a href="#" class="delete" title="Delete" data-toggle="tooltip">
-                                            <ion-icon name="trash-outline"></ion-icon>
-                                        </a>
-                                    </td>
-                                    <td>Fran Wilson</td>
-                                    <td>(61) 98356-5278</td>
-                                    <td>thomas33@gmai.com</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="#" class="view" title="View" data-toggle="tooltip">
-                                            <ion-icon name="eye-outline"></ion-icon>
-                                        </a>
-                                        <a href="#" class="edit" title="Edit" data-toggle="tooltip">
-                                            <ion-icon name="create-outline"></ion-icon>
-                                        </a>
-                                        <a href="#" class="delete" title="Delete" data-toggle="tooltip">
-                                            <ion-icon name="trash-outline"></ion-icon>
-                                        </a>
-                                    </td>
-                                    <td>Dominique Perrier</td>
-                                    <td>(55) 98675-4534</td>
-                                    <td>maiaand4@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="#" class="view" title="View" data-toggle="tooltip">
-                                            <ion-icon name="eye-outline"></ion-icon>
-                                        </a>
-                                        <a href="#" class="edit" title="Edit" data-toggle="tooltip">
-                                            <ion-icon name="create-outline"></ion-icon>
-                                        </a>
-                                        <a href="#" class="delete" title="Delete" data-toggle="tooltip">
-                                            <ion-icon name="trash-outline"></ion-icon>
-                                        </a>
-                                    </td>
-                                    <td>Martin Blank</td>
-                                    <td>(61) 98356-5278</td>
-                                    <td>thomas33@gmai.com</td>
-                                </tr>
+                                @endforeach
                             </tbody>
                         </table>
                         <div class="clearfix">
