@@ -22,7 +22,7 @@
     <label for="inputEmail">Endereço de email</label>
     <input type="email" class="form-control" id="inputEmail" name="inputEmail" aria-describedby="email" placeholder="Seu email">
   </div>
-  <button type="submit" class="btn btn-primary">Enviar</button>
+  <button type="submit" class="btn btn-primary">Cadastrar</button>
 </form>
 
 </main>

@@ -13,6 +13,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../../css/style.css">
 
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -67,10 +68,10 @@
                 <a href="/" id="nuvem">
                     <ion-icon name="cloud"></ion-icon>
                 </a>
-                <a href="#" class="item-menu">
+                <a href="/clientes" class="item-menu">
                     <ion-icon name="create-outline"></ion-icon>
                 </a>
-                <a href="#" class="item-menu">
+                <a href="/clientes/cadastro" class="item-menu">
                     <ion-icon name="document-outline"></ion-icon>
                 </a>
                 <a href="#" class="item-menu">

@@ -12,7 +12,7 @@
                         <div class="table-title">
                             <div class="row ">
                                 <div class="col-sm-8">
-                                    <button type="button" class="btn btn-primary">Incluir</button>
+                                    <a href="/clientes/cadastro"><button type="button" class="btn btn-primary">Incluir</button></a>
                                     <button type="button" class="btn btn-primary">Imprmir</button>
                                 </div>
                                 <div class="col-sm-4">
@@ -73,12 +73,18 @@
                                         <a href="/clientes/{{ $cliente->id }}" class="view" title="View" data-toggle="tooltip">
                                             <ion-icon name="eye-outline"></ion-icon>
                                         </a>
-                                        <a href="#" class="edit" title="Edit" data-toggle="tooltip">
+                                        <a href="/clientes/edit/{{ $cliente->id }}" class="edit" title="Edit" data-toggle="tooltip">
                                             <ion-icon name="create-outline"></ion-icon>
                                         </a>
-                                        <a href="#" class="delete" title="Delete" data-toggle="tooltip">
-                                            <ion-icon name="trash-outline"></ion-icon>
-                                        </a>
+                                        <form action="/clientes/{{ $cliente->id }}" method="post">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit">
+                                            <a href="#" class="delete" title="Delete" data-toggle="tooltip">
+                                                <ion-icon name="trash-outline"></ion-icon>
+                                            </a>
+                                            </button>
+                                        </form>
                                     </td>
                                     <td>{{ $cliente->nome }}</td>
                                     <td>{{ $cliente->telefone }}</td>
