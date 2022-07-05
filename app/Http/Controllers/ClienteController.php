@@ -19,8 +19,12 @@ class ClienteController extends Controller
         
         $clientes = Cliente::all();
 
-        return view('clientes', ['clientes' => $clientes]);
+        return view('clientes.clientes', ['clientes' => $clientes]);
 
+    }
+
+    public function cadastroCliente() {
+        return view('clientes.cadastro-cliente');
     }
 
 

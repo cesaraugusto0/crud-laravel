@@ -12,6 +12,7 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
 
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -111,8 +112,15 @@
                 </div>
                 <hr>
 
-                <!--conteudo-->
-                @yield('content')
+                <!--main começo -->
+
+                <main>
+                    @yield('content')
+
+                </main>
+
+                <!--main começo -->
+                
 
             </div>
             <!--content final-->
