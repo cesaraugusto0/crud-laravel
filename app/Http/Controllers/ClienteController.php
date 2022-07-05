@@ -41,5 +41,13 @@ class ClienteController extends Controller
 
     }
 
+    public function show($id) {
+
+        $cliente = Cliente::findOrFail($id);
+
+        return view('clientes.show', ['cliente' => $cliente]);
+
+    }
+
 
 }

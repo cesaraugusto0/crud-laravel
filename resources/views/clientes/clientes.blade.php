@@ -70,7 +70,7 @@
                                 <tr>
                                     
                                     <td>
-                                        <a href="#" class="view" title="View" data-toggle="tooltip">
+                                        <a href="/clientes/{{ $cliente->id }}" class="view" title="View" data-toggle="tooltip">
                                             <ion-icon name="eye-outline"></ion-icon>
                                         </a>
                                         <a href="#" class="edit" title="Edit" data-toggle="tooltip">
