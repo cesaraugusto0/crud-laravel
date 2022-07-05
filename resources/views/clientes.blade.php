@@ -182,7 +182,7 @@
                                     <td>{{ $cliente->telefone }}</td>
                                     <td>{{ $cliente->email }}</td>
                                 </tr>
-                                @endforeach
+                                @endforeach 
                             </tbody>
                         </table>
                         <div class="clearfix">
