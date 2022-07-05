@@ -76,7 +76,7 @@
                                         <a href="/clientes/edit/{{ $cliente->id }}" class="edit" title="Edit" data-toggle="tooltip">
                                             <ion-icon name="create-outline"></ion-icon>
                                         </a>
-                                        <form action="/clientes/{{ $cliente->id }}" method="post">
+                                        <form action="/clientes/{{ $cliente->id }}" method="post"class="btn-delete">
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit">

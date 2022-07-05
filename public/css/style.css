@@ -267,6 +267,16 @@ table.table td:last-child {
     width: 130px;
 }
 
+form.btn-delete {
+    display: inline-block;
+}
+
+form.btn-delete button {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+}
+
 table.table td a {
     color: #a0a5b1;
     display: inline-block;
