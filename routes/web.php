@@ -15,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ClienteController;
 
-Route::get('/clientes', [ClienteController::class, 'index']);
-Route::get('/', [ClienteController::class, 'home']);
+Route::get('/', [ClienteController::class, 'index']);
+Route::get('/clientes', [ClienteController::class, 'clientes']);
+
